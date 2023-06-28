@@ -27,7 +27,7 @@ from fildz_buzzer import Buzzer
 
 async def main():
     await cyberos.init()
-    bzr = Buzzer(PWM(Pin(14), freq=100, duty=0))
+    bzr = Buzzer(PWM(Pin(12), freq=100, duty=0))
     await bzr.play(index=0)  # Will play "on" from "TONES" list in "tones.py".
     await bzr.play(name='off')
     await cyberos.run_forever()
