@@ -9,7 +9,7 @@
 # Features:
 # - Completely asynchronous.
 # - Supports RTTTL (Ring Tone Text Transfer Language).
-# - Adjustable control.
+# - Adjustable volume.
 
 # TODO:
 #  1. Setting from PWM(freq=0) to PWM(freq=100) takes some time. (first few notes are silent/skipped)
