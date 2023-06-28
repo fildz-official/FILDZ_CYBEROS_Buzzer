@@ -9,7 +9,7 @@
 # Features:
 # - Completely asynchronous.
 # - Supports RTTTL (Ring Tone Text Transfer Language).
-# - Volume control.
+# - Adjustable control.
 
 # TODO:
 #  1. Setting from PWM(freq=0) to PWM(freq=100) takes some time. (first few notes are silent/skipped)
@@ -17,12 +17,11 @@
 import uasyncio as asyncio
 from .rtttl import RTTTL
 from .tones import TONES
-from machine import PWM
 
 
 class Buzzer:
     def __init__(self, pin):
-        self._tone = PWM(pin, freq=100, duty=0)  # if freq=0 then first few notes are silent/skipped.
+        self._tone = pin  # if freq=0 then first few notes are silent/skipped.
         self._vol = 2  # Buzzer volume range 0 - 1023.
 
     ################################################################################
