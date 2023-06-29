@@ -16,8 +16,6 @@ Fully asynchronous buzzer library for CYBEROS.
 
 ## Usage
 
-### Default:
-
 ```Python
 from machine import Pin, PWM
 import uasyncio as asyncio
