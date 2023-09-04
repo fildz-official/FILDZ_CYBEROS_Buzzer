@@ -11,8 +11,7 @@ Fully asynchronous buzzer library for CYBEROS.
 ## Setup
 
 1. Download and extract .zip file contents to "fildz_buzzer" folder.
-2. "fildz_buzzer" folder should contain only `__init__.py`, `rtttl.py` and `tones.py` files.
-3. Upload "fildz_buzzer" folder to your MicroPython powered device.
+2. Upload "fildz_buzzer" folder to your MicroPython powered device.
 
 ## Usage
 
